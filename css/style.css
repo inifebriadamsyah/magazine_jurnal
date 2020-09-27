@@ -1122,7 +1122,7 @@ h3 {
 /* line 122, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_slick-nav.scss */
 
 .slicknav_icon-bar {
-    background: rgb(221, 255, 197) !important;
+    background: rgb(201, 255, 39) !important;
 }
 
 
@@ -1518,7 +1518,7 @@ h3 {
 @media (max-width: 767px) {
     /* line 220, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_header.scss */
     .header-area .main-header-area.sticky {
-        padding: 30px 30px;
+        padding: 30px 16px;
     }
 }
 
@@ -1556,6 +1556,14 @@ h3 {
 .header-area .header-top_area {
     padding: 15px 0;
     background: #f2f2f2;
+}
+
+@media (max-width: 767px) {
+    /* line 255, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_header.scss */
+    .header-area .header-top_area {
+        text-align: center;
+        display: none;
+    }
 }
 
 
