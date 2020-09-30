@@ -26,13 +26,22 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
-
+    
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <style>
+        .slick-prev:before,
+        .slick-next:before {
+            color: #71c200;
+        }
+    </style>
 </head>
 
 <body>
@@ -171,7 +180,15 @@
 
     <div class="container">
         <div class="bordered_1px"></div>
-        <ul class="nav nav-pills nav-fill">
+        <div class="center">
+            <div><button class="btn btn-primary btn-rounded">Kamis, 1 Oktober 2020</button></div>
+            <div><button class="btn btn-primary btn-rounded">Kamis, 1 Oktober 2020</button></div>
+            <div><button class="btn btn-primary btn-rounded">Kamis, 1 Oktober 2020</button></div>
+            <div><button class="btn btn-primary btn-rounded">Kamis, 1 Oktober 2020</button></div>
+            <div><button class="btn btn-primary btn-rounded">Kamis, 1 Oktober 2020</button></div>
+            <div><button class="btn btn-primary btn-rounded">Kamis, 1 Oktober 2020</button></div>
+        </div>
+        <!-- <ul class="nav nav-pills nav-fill">
             <li class="nav-item">
                 <a class="nav-link active" href="#">Kamis, 1 Okt 2020</a>
             </li>
@@ -190,7 +207,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Selasa, 6 Okt 2020</a>
             </li>
-        </ul>
+        </ul> -->
         <div class="bordered_1px mt-30"></div>
     </div>
     <br><br>
@@ -660,6 +677,7 @@
     <script src="js/mail-script.js "></script>
 
     <script src="js/main.js "></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
         $('#datepicker1').datepicker({
             iconsLibrary: 'fontawesome',
@@ -675,6 +693,38 @@
         });
         var timepicker = $('#timepicker').timepicker({
             format: 'HH.MM'
+        });
+        $(document).ready(function() {
+            $('.center').slick({
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 4,
+                responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }]
+            });
         });
     </script>
     <script type="text/javascript">
