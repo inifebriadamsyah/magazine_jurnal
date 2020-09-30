@@ -134,64 +134,98 @@
     </div>
     <!-- bradcam_area_end -->
     <br><br><br>
-    <div class="row justify-content-center">
-        
-        <div class="col-lg-4">
-            <div class="form-group">
-                <input class="form-control" type="text" placeholder="Tanggal terbit" id="datepicker1">
+
+    <div class="container">
+        <div class="row col-lg-12">
+            <div class="section_title col-md-7">
+                <h3 style="font-size: 24px; color: black;">Filter Tanggal Terbit</h3>
+            </div>
+            <!-- Example split danger button -->
+            <div class="btn-group mx-2 my-2">
+                <button type="button" class="btn btn-primary">Pilih <strong>Tahun</strong> terbit</button>
+                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu" style="height: auto; overflow-y: scroll;">
+                    <a class="dropdown-item" href="#">2018</a>
+                    <a class="dropdown-item" href="#">2019</a>
+                    <a class="dropdown-item" href="#">2020</a>
+
+                </div>
+            </div>
+            <div class="btn-group mx-2 my-2">
+                <button type="button" class="btn btn-primary">Pilih <strong>Bulan</strong> terbit</button>
+                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu" style="height: auto; overflow-y: scroll;">
+                    <a class="dropdown-item" href="#">Juli</a>
+                    <a class="dropdown-item" href="#">Agustus</a>
+                    <a class="dropdown-item" href="#">September</a>
+                    <a class="dropdown-item" href="#">Oktober</a>
+                </div>
             </div>
         </div>
-        <div class="col-lg-4">
-            <div class="form-group">
-                <input class="form-control" type="text" placeholder="Tanggal terbit" id="datepicker2">
-            </div>
-        </div>
-        
     </div>
-    <div class="bordered_1px"></div>
+    <br>
+
+    <div class="container">
+        <div class="bordered_1px"></div>
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Kamis, 1 Okt 2020</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Jum'at, 2 Okt 2020</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sabtu, 3 Okt 2020</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Minggu, 4 Okt 2020</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Senin, 5 Okt 2020</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Selasa, 6 Okt 2020</a>
+            </li>
+        </ul>
+        <div class="bordered_1px mt-30"></div>
+    </div>
+    <br><br>
+
     <section class="blog_item_section blog_section section_padding">
         <div class="container">
             <div class="row justify-content-center ">
                 <div class="col-lg-10 col-md-10 ">
                     <div class="section_title text-center">
-                        <h3 style="font-size: 36px;">International Magazine</h3>
+                        <h3 style="font-size: 36px;">Majalah Internasional</h3>
                         <br>
                     </div>
                 </div>
             </div>
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">ARGUS</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#home" role="tab" aria-controls="profile" aria-selected="false">ICIS</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#home" role="tab" aria-controls="contact" aria-selected="false">IFA</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#home" role="tab" aria-controls="contact" aria-selected="false">FERTECON</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#home" role="tab" aria-controls="contact" aria-selected="false">CRU</a>
-                </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-                <br>
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="row justify-content-center" id="home">
-                        <div class="col-sm-12 col-lg-4 " style="margin-bottom: 30px;">
-                            <div class="single_blog_item ">
-                                <div class="single_blog_img ">
-                                    <img src="img/food_item/books.jpg " alt=" ">
-                                </div>
+            <div class="row">
+                <div class="nav flex-column nav-pills col-md-2 col-lg-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <p>Daftar Penerbit</p>
+                    <div class="bordered_1px"></div>
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">ARGUS</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">ICIS</a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">IFA</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">FERTECON</a>
+                    <a class="nav-link" id="v-pills-setting-tab" data-toggle="pill" href="#v-pills-setting" role="tab" aria-controls="v-pills-setting" aria-selected="false">CRU</a>
+                </div>
+                <div class="tab-content col-lg-9 col-md-9 ml-5" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div class="col-sm-12 col-lg-12" style="margin-bottom: 20px;">
+                            <div class="single_blog_item">
                                 <div class="single_blog_text " style="border-radius: 0px 0px 10px 10px !important; padding:20px 20px !important; ">
                                     <div class="date ">
                                         <a href="# " class="date_item ">Apr 06, 2019 </a>
                                         <a href="# " class="date_item "> <span>#</span> Majalah </a>
                                     </div>
                                     <h3 style="font-size: 16px; "><a href="baca.html ">Building a Transparent Supply
-                                            Chain</a>
+                                            Chain, Building a Transparent Supply Chain</a>
                                     </h3>
                                     <div class="mt-4 mb-4 ">
                                         <a href="# " style="color: black; " class="boxed-btn5 ">finance</a>
@@ -199,29 +233,25 @@
                                         <a href="# " style="color: black; " class="boxed-btn5 ">teknologi</a>
                                     </div>
 
-                                    <ul class="blog-info-link mt-4 mb-4 ">
+                                    <ul class="blog-info-link mt-4">
                                         <li><i class="fa fa-eye "></i> 21x dilihat</li>
                                         <li><i class="fa fa-download "></i> 12x diunduh</li>
                                         <li><i class="fa fa-comments "></i> 5 Komentar</li>
+                                        <li><a href="baca.html " class="btn_3 ">Selengkapnya <img
+                                                    src="img/icon/left_1.svg " alt=" "></a></li>
                                     </ul>
-
-                                    <a href="baca.html " class="btn_3 ">Selengkapnya <img src="img/icon/left_1.svg "
-                                            alt=" "></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4 " style="margin-bottom: 30px; ">
-                            <div class="single_blog_item ">
-                                <div class="single_blog_img ">
-                                    <img src="img/food_item/books.jpg " alt=" ">
-                                </div>
+                        <div class="col-sm-12 col-lg-12" style="margin-bottom: 20px;">
+                            <div class="single_blog_item">
                                 <div class="single_blog_text " style="border-radius: 0px 0px 10px 10px !important; padding:20px 20px !important; ">
                                     <div class="date ">
                                         <a href="# " class="date_item ">Apr 06, 2019 </a>
                                         <a href="# " class="date_item "> <span>#</span> Majalah </a>
                                     </div>
                                     <h3 style="font-size: 16px; "><a href="baca.html ">Building a Transparent Supply
-                                            Chain</a>
+                                            Chain, Building a Transparent Supply Chain</a>
                                     </h3>
                                     <div class="mt-4 mb-4 ">
                                         <a href="# " style="color: black; " class="boxed-btn5 ">finance</a>
@@ -229,99 +259,27 @@
                                         <a href="# " style="color: black; " class="boxed-btn5 ">teknologi</a>
                                     </div>
 
-                                    <ul class="blog-info-link mt-4 mb-4 ">
+                                    <ul class="blog-info-link mt-4">
                                         <li><i class="fa fa-eye "></i> 21x dilihat</li>
                                         <li><i class="fa fa-download "></i> 12x diunduh</li>
                                         <li><i class="fa fa-comments "></i> 5 Komentar</li>
+                                        <li><a href="baca.html " class="btn_3 ">Selengkapnya <img
+                                                    src="img/icon/left_1.svg " alt=" "></a></li>
                                     </ul>
-
-                                    <a href="baca.html " class="btn_3 ">Selengkapnya <img src="img/icon/left_1.svg "
-                                            alt=" "></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-lg-4 " style="margin-bottom: 30px; ">
-                            <div class="single_blog_item ">
-                                <div class="single_blog_img ">
-                                    <img src="img/food_item/books.jpg " alt=" ">
-                                </div>
-                                <div class="single_blog_text " style="border-radius: 0px 0px 10px 10px !important; padding:20px 20px !important; ">
-                                    <div class="date ">
-                                        <a href="# " class="date_item ">Apr 06, 2019 </a>
-                                        <a href="# " class="date_item "> <span>#</span> Majalah </a>
-                                    </div>
-                                    <h3 style="font-size: 16px; "><a href="baca.html ">Building a Transparent Supply
-                                            Chain</a>
-                                    </h3>
-                                    <div class="mt-4 mb-4 ">
-                                        <a href="# " style="color: black; " class="boxed-btn5 ">finance</a>
-                                        <a href="# " style="color: black; " class="boxed-btn5 ">pemasaran</a>
-                                        <a href="# " style="color: black; " class="boxed-btn5 ">teknologi</a>
-                                    </div>
-
-                                    <ul class="blog-info-link mt-4 mb-4 ">
-                                        <li><i class="fa fa-eye "></i> 21x dilihat</li>
-                                        <li><i class="fa fa-download "></i> 12x diunduh</li>
-                                        <li><i class="fa fa-comments "></i> 5 Komentar</li>
-                                    </ul>
-
-                                    <a href="baca.html " class="btn_3 ">Selengkapnya <img src="img/icon/left_1.svg "
-                                            alt=" "></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-            </div>
-
-            <div class="bordered_1px mb-65 mt-70 "></div>
-        </div>
-    </section>
-
-    <section class="blog_item_section blog_section section_padding ">
-        <div class="container ">
-            <div class="row justify-content-center ">
-                <div class="col-lg-10 col-md-10 ">
-                    <div class="section_title text-center mb-65 ">
-                        <h3 style="font-size: 36px; ">National Magazine</h3>
-                    </div>
-                </div>
-            </div>
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Tempo</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#home" role="tab" aria-controls="profile" aria-selected="false">Kompas</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#home" role="tab" aria-controls="contact" aria-selected="false">ETC</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#home" role="tab" aria-controls="contact" aria-selected="false">ETC</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#home" role="tab" aria-controls="contact" aria-selected="false">ETC</a>
-                </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-                <br>
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="row justify-content-center" id="home">
-                        <div class="col-sm-12 col-lg-4 " style="margin-bottom: 30px;">
-                            <div class="single_blog_item ">
-                                <div class="single_blog_img ">
-                                    <img src="img/food_item/books.jpg " alt=" ">
-                                </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <div class="col-sm-12 col-lg-12" style="margin-bottom: 20px;">
+                            <div class="single_blog_item">
                                 <div class="single_blog_text " style="border-radius: 0px 0px 10px 10px !important; padding:20px 20px !important; ">
                                     <div class="date ">
                                         <a href="# " class="date_item ">Apr 06, 2019 </a>
                                         <a href="# " class="date_item "> <span>#</span> Majalah </a>
                                     </div>
                                     <h3 style="font-size: 16px; "><a href="baca.html ">Building a Transparent Supply
-                                            Chain</a>
+                                            Chain, Building a Transparent Supply Chain</a>
                                     </h3>
                                     <div class="mt-4 mb-4 ">
                                         <a href="# " style="color: black; " class="boxed-btn5 ">finance</a>
@@ -329,81 +287,108 @@
                                         <a href="# " style="color: black; " class="boxed-btn5 ">teknologi</a>
                                     </div>
 
-                                    <ul class="blog-info-link mt-4 mb-4 ">
+                                    <ul class="blog-info-link mt-4">
                                         <li><i class="fa fa-eye "></i> 21x dilihat</li>
                                         <li><i class="fa fa-download "></i> 12x diunduh</li>
                                         <li><i class="fa fa-comments "></i> 5 Komentar</li>
+                                        <li><a href="baca.html " class="btn_3 ">Selengkapnya <img
+                                                    src="img/icon/left_1.svg " alt=" "></a></li>
                                     </ul>
-
-                                    <a href="baca.html " class="btn_3 ">Selengkapnya <img src="img/icon/left_1.svg "
-                                            alt=" "></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-lg-4 " style="margin-bottom: 30px; ">
-                            <div class="single_blog_item ">
-                                <div class="single_blog_img ">
-                                    <img src="img/food_item/books.jpg " alt=" ">
-                                </div>
-                                <div class="single_blog_text " style="border-radius: 0px 0px 10px 10px !important; padding:20px 20px !important; ">
-                                    <div class="date ">
-                                        <a href="# " class="date_item ">Apr 06, 2019 </a>
-                                        <a href="# " class="date_item "> <span>#</span> Majalah </a>
-                                    </div>
-                                    <h3 style="font-size: 16px; "><a href="baca.html ">Building a Transparent Supply
-                                            Chain</a>
-                                    </h3>
-                                    <div class="mt-4 mb-4 ">
-                                        <a href="# " style="color: black; " class="boxed-btn5 ">finance</a>
-                                        <a href="# " style="color: black; " class="boxed-btn5 ">pemasaran</a>
-                                        <a href="# " style="color: black; " class="boxed-btn5 ">teknologi</a>
-                                    </div>
-
-                                    <ul class="blog-info-link mt-4 mb-4 ">
-                                        <li><i class="fa fa-eye "></i> 21x dilihat</li>
-                                        <li><i class="fa fa-download "></i> 12x diunduh</li>
-                                        <li><i class="fa fa-comments "></i> 5 Komentar</li>
-                                    </ul>
-
-                                    <a href="baca.html " class="btn_3 ">Selengkapnya <img src="img/icon/left_1.svg "
-                                            alt=" "></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-lg-4 " style="margin-bottom: 30px; ">
-                            <div class="single_blog_item ">
-                                <div class="single_blog_img ">
-                                    <img src="img/food_item/books.jpg " alt=" ">
-                                </div>
-                                <div class="single_blog_text " style="border-radius: 0px 0px 10px 10px !important; padding:20px 20px !important; ">
-                                    <div class="date ">
-                                        <a href="# " class="date_item ">Apr 06, 2019 </a>
-                                        <a href="# " class="date_item "> <span>#</span> Majalah </a>
-                                    </div>
-                                    <h3 style="font-size: 16px; "><a href="baca.html ">Building a Transparent Supply
-                                            Chain</a>
-                                    </h3>
-                                    <div class="mt-4 mb-4 ">
-                                        <a href="# " style="color: black; " class="boxed-btn5 ">finance</a>
-                                        <a href="# " style="color: black; " class="boxed-btn5 ">pemasaran</a>
-                                        <a href="# " style="color: black; " class="boxed-btn5 ">teknologi</a>
-                                    </div>
-
-                                    <ul class="blog-info-link mt-4 mb-4 ">
-                                        <li><i class="fa fa-eye "></i> 21x dilihat</li>
-                                        <li><i class="fa fa-download "></i> 12x diunduh</li>
-                                        <li><i class="fa fa-comments "></i> 5 Komentar</li>
-                                    </ul>
-
-                                    <a href="baca.html " class="btn_3 ">Selengkapnya <img src="img/icon/left_1.svg "
-                                            alt=" "></a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <div class="col-sm-12 col-lg-12" style="margin-bottom: 20px;">
+                            <div class="single_blog_item">
+                                <div class="single_blog_text " style="border-radius: 0px 0px 10px 10px !important; padding:20px 20px !important; ">
+                                    <div class="date ">
+                                        <a href="# " class="date_item ">Apr 06, 2019 </a>
+                                        <a href="# " class="date_item "> <span>#</span> Majalah </a>
+                                    </div>
+                                    <h3 style="font-size: 16px; "><a href="baca.html ">Building a Transparent Supply
+                                            Chain, Building a Transparent Supply Chain</a>
+                                    </h3>
+                                    <div class="mt-4 mb-4 ">
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">finance</a>
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">pemasaran</a>
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">teknologi</a>
+                                    </div>
+
+                                    <ul class="blog-info-link mt-4">
+                                        <li><i class="fa fa-eye "></i> 21x dilihat</li>
+                                        <li><i class="fa fa-download "></i> 12x diunduh</li>
+                                        <li><i class="fa fa-comments "></i> 5 Komentar</li>
+                                        <li><a href="baca.html " class="btn_3 ">Selengkapnya <img
+                                                    src="img/icon/left_1.svg " alt=" "></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-12" style="margin-bottom: 20px;">
+                            <div class="single_blog_item">
+                                <div class="single_blog_text " style="border-radius: 0px 0px 10px 10px !important; padding:20px 20px !important; ">
+                                    <div class="date ">
+                                        <a href="# " class="date_item ">Apr 06, 2019 </a>
+                                        <a href="# " class="date_item "> <span>#</span> Majalah </a>
+                                    </div>
+                                    <h3 style="font-size: 16px; "><a href="baca.html ">Building a Transparent Supply
+                                            Chain, Building a Transparent Supply Chain</a>
+                                    </h3>
+                                    <div class="mt-4 mb-4 ">
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">finance</a>
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">pemasaran</a>
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">teknologi</a>
+                                    </div>
+
+                                    <ul class="blog-info-link mt-4">
+                                        <li><i class="fa fa-eye "></i> 21x dilihat</li>
+                                        <li><i class="fa fa-download "></i> 12x diunduh</li>
+                                        <li><i class="fa fa-comments "></i> 5 Komentar</li>
+                                        <li><a href="baca.html " class="btn_3 ">Selengkapnya <img
+                                                    src="img/icon/left_1.svg " alt=" "></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        <div class="col-sm-12 col-lg-12" style="margin-bottom: 20px;">
+                            <div class="single_blog_item">
+                                <div class="single_blog_text " style="border-radius: 0px 0px 10px 10px !important; padding:20px 20px !important; ">
+                                    <div class="date ">
+                                        <a href="# " class="date_item ">Apr 06, 2019 </a>
+                                        <a href="# " class="date_item "> <span>#</span> Majalah </a>
+                                    </div>
+                                    <h3 style="font-size: 16px; "><a href="baca.html ">Building a Transparent Supply
+                                            Chain, Building a Transparent Supply Chain</a>
+                                    </h3>
+                                    <div class="mt-4 mb-4 ">
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">finance</a>
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">pemasaran</a>
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">teknologi</a>
+                                    </div>
+
+                                    <ul class="blog-info-link mt-4">
+                                        <li><i class="fa fa-eye "></i> 21x dilihat</li>
+                                        <li><i class="fa fa-download "></i> 12x diunduh</li>
+                                        <li><i class="fa fa-comments "></i> 5 Komentar</li>
+                                        <li><a href="baca.html " class="btn_3 ">Selengkapnya <img
+                                                    src="img/icon/left_1.svg " alt=" "></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-setting" role="tabpanel" aria-labelledby="v-pills-setting-tab">
+                        <div class="row">
+                            <br><br><br>
+                            <p>Tidak ditemukan majalah <strong>
+                                    CRU
+                                </strong> pada hari ini</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
             </div>
             <div class="bordered_1px mb-65 mt-70 "></div>
         </div>
@@ -414,37 +399,29 @@
             <div class="row justify-content-center ">
                 <div class="col-lg-10 col-md-10 ">
                     <div class="section_title text-center mb-65 ">
-                        <h3 style="font-size: 36px; ">International Journal</h3>
+                        <h3 style="font-size: 36px;">Majalah Nasional</h3>
                     </div>
                 </div>
             </div>
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Harvard Business Review</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#home" role="tab" aria-controls="profile" aria-selected="false">Harvard Business Review</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#home" role="tab" aria-controls="contact" aria-selected="false">Harvard Business Review</a>
-                </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-                <br>
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="row justify-content-center" id="home">
-                        <div class="col-sm-12 col-lg-4 " style="margin-bottom: 30px; ">
-                            <div class="single_blog_item ">
-                                <div class="single_blog_img ">
-                                    <img src="img/food_item/books.jpg " alt=" ">
-                                </div>
+            <div class="row">
+                <div class="nav flex-column nav-pills col-md-2 col-lg-2" id="v-pills-tab2" role="tablist" aria-orientation="vertical">
+                    <p>Daftar Penerbit</p>
+                    <div class="bordered_1px"></div>
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home2" role="tab" aria-controls="v-pills-home2" aria-selected="true">Trubus</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile2" role="tab" aria-controls="v-pills-profile2" aria-selected="false">Tempo</a>
+                    <a class="nav-link" id="v-pills-setting-tab" data-toggle="pill" href="#v-pills-setting2" role="tab" aria-controls="v-pills-setting2" aria-selected="false">Kompas</a>
+                </div>
+                <div class="tab-content col-lg-9 col-md-9 ml-5" id="v-pills-tab2Content">
+                    <div class="tab-pane fade show active" id="v-pills-home2" role="tabpanel" aria-labelledby="v-pills-home2-tab">
+                        <div class="col-sm-12 col-lg-12" style="margin-bottom: 20px;">
+                            <div class="single_blog_item">
                                 <div class="single_blog_text " style="border-radius: 0px 0px 10px 10px !important; padding:20px 20px !important; ">
                                     <div class="date ">
                                         <a href="# " class="date_item ">Apr 06, 2019 </a>
-                                        <a href="# " class="date_item "> <span>#</span> Jurnal </a>
+                                        <a href="# " class="date_item "> <span>#</span> Majalah </a>
                                     </div>
                                     <h3 style="font-size: 16px; "><a href="baca.html ">Building a Transparent Supply
-                                            Chain</a>
+                                            Chain, Building a Transparent Supply Chain</a>
                                     </h3>
                                     <div class="mt-4 mb-4 ">
                                         <a href="# " style="color: black; " class="boxed-btn5 ">finance</a>
@@ -452,29 +429,25 @@
                                         <a href="# " style="color: black; " class="boxed-btn5 ">teknologi</a>
                                     </div>
 
-                                    <ul class="blog-info-link mt-4 mb-4 ">
+                                    <ul class="blog-info-link mt-4">
                                         <li><i class="fa fa-eye "></i> 21x dilihat</li>
                                         <li><i class="fa fa-download "></i> 12x diunduh</li>
                                         <li><i class="fa fa-comments "></i> 5 Komentar</li>
+                                        <li><a href="baca.html " class="btn_3 ">Selengkapnya <img
+                                                    src="img/icon/left_1.svg " alt=" "></a></li>
                                     </ul>
-
-                                    <a href="baca.html " class="btn_3 ">Selengkapnya <img src="img/icon/left_1.svg "
-                                            alt=" "></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-4 " style="margin-bottom: 30px; ">
-                            <div class="single_blog_item ">
-                                <div class="single_blog_img ">
-                                    <img src="img/food_item/books.jpg " alt=" ">
-                                </div>
+                        <div class="col-sm-12 col-lg-12" style="margin-bottom: 20px;">
+                            <div class="single_blog_item">
                                 <div class="single_blog_text " style="border-radius: 0px 0px 10px 10px !important; padding:20px 20px !important; ">
                                     <div class="date ">
                                         <a href="# " class="date_item ">Apr 06, 2019 </a>
-                                        <a href="# " class="date_item "> <span>#</span> Jurnal </a>
+                                        <a href="# " class="date_item "> <span>#</span> Majalah </a>
                                     </div>
                                     <h3 style="font-size: 16px; "><a href="baca.html ">Building a Transparent Supply
-                                            Chain</a>
+                                            Chain, Building a Transparent Supply Chain</a>
                                     </h3>
                                     <div class="mt-4 mb-4 ">
                                         <a href="# " style="color: black; " class="boxed-btn5 ">finance</a>
@@ -482,60 +455,146 @@
                                         <a href="# " style="color: black; " class="boxed-btn5 ">teknologi</a>
                                     </div>
 
-                                    <ul class="blog-info-link mt-4 mb-4 ">
+                                    <ul class="blog-info-link mt-4">
                                         <li><i class="fa fa-eye "></i> 21x dilihat</li>
                                         <li><i class="fa fa-download "></i> 12x diunduh</li>
                                         <li><i class="fa fa-comments "></i> 5 Komentar</li>
+                                        <li><a href="baca.html " class="btn_3 ">Selengkapnya <img
+                                                    src="img/icon/left_1.svg " alt=" "></a></li>
                                     </ul>
-
-                                    <a href="baca.html " class="btn_3 ">Selengkapnya <img src="img/icon/left_1.svg "
-                                            alt=" "></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-lg-4 " style="margin-bottom: 30px; ">
-                            <div class="single_blog_item ">
-                                <div class="single_blog_img ">
-                                    <img src="img/food_item/books.jpg " alt=" ">
-                                </div>
-                                <div class="single_blog_text " style="border-radius: 0px 0px 10px 10px !important; padding:20px 20px !important; ">
-                                    <div class="date ">
-                                        <a href="# " class="date_item ">Apr 06, 2019 </a>
-                                        <a href="# " class="date_item "> <span>#</span> Jurnal </a>
-                                    </div>
-                                    <h3 style="font-size: 16px; "><a href="baca.html ">Building a Transparent Supply
-                                            Chain</a>
-                                    </h3>
-                                    <div class="mt-4 mb-4 ">
-                                        <a href="# " style="color: black; " class="boxed-btn5 ">finance</a>
-                                        <a href="# " style="color: black; " class="boxed-btn5 ">pemasaran</a>
-                                        <a href="# " style="color: black; " class="boxed-btn5 ">teknologi</a>
-                                    </div>
-
-                                    <ul class="blog-info-link mt-4 mb-4 ">
-                                        <li><i class="fa fa-eye "></i> 21x dilihat</li>
-                                        <li><i class="fa fa-download "></i> 12x diunduh</li>
-                                        <li><i class="fa fa-comments "></i> 5 Komentar</li>
-                                    </ul>
-
-                                    <a href="baca.html " class="btn_3 ">Selengkapnya <img src="img/icon/left_1.svg "
-                                            alt=" "></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-            </div>
-            <div class="row justify-content-center ">
+                    <div class="tab-pane fade" id="v-pills-profile2" role="tabpanel" aria-labelledby="v-pills-profile2-tab">
+                        <div class="col-sm-12 col-lg-12" style="margin-bottom: 20px;">
+                            <div class="single_blog_item">
+                                <div class="single_blog_text " style="border-radius: 0px 0px 10px 10px !important; padding:20px 20px !important; ">
+                                    <div class="date ">
+                                        <a href="# " class="date_item ">Apr 06, 2019 </a>
+                                        <a href="# " class="date_item "> <span>#</span> Majalah </a>
+                                    </div>
+                                    <h3 style="font-size: 16px; "><a href="baca.html ">Building a Transparent Supply
+                                            Chain, Building a Transparent Supply Chain</a>
+                                    </h3>
+                                    <div class="mt-4 mb-4 ">
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">finance</a>
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">pemasaran</a>
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">teknologi</a>
+                                    </div>
 
+                                    <ul class="blog-info-link mt-4">
+                                        <li><i class="fa fa-eye "></i> 21x dilihat</li>
+                                        <li><i class="fa fa-download "></i> 12x diunduh</li>
+                                        <li><i class="fa fa-comments "></i> 5 Komentar</li>
+                                        <li><a href="baca.html " class="btn_3 ">Selengkapnya <img
+                                                    src="img/icon/left_1.svg " alt=" "></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-setting2" role="tabpanel" aria-labelledby="v-pills-setting2-tab">
+                        <div class="row">
+                            <br><br><br>
+                            <p>Tidak ditemukan majalah <strong>
+                                    Kompas
+                                </strong> pada hari ini</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <br><br>
+        <div class="bordered_1px mb-65 mt-70 "></div>
+        </div>
     </section>
 
-    <!-- footer_start  -->
+    <section class="blog_item_section blog_section section_padding ">
+        <div class="container ">
+            <div class="row justify-content-center ">
+                <div class="col-lg-10 col-md-10 ">
+                    <div class="section_title text-center mb-65 ">
+                        <h3 style="font-size: 36px;">Jurnal Internasional</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="nav flex-column nav-pills col-md-2 col-lg-2" id="v-pills-tab3" role="tablist" aria-orientation="vertical">
+                    <p>Daftar Penerbit</p>
+                    <div class="bordered_1px"></div>
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home3" role="tab" aria-controls="v-pills-home2" aria-selected="true">Scopus</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile3" role="tab" aria-controls="v-pills-profile2" aria-selected="false">Harvard Business Review</a>
+                </div>
+                <div class="tab-content col-lg-9 col-md-9 ml-5" id="v-pills-tab3Content">
+                    <div class="tab-pane fade show active" id="v-pills-home3" role="tabpanel" aria-labelledby="v-pills-home3-tab">
+                        <div class="row">
+                            <br><br><br>
+                            <p>Tidak ditemukan Jurnal <strong>
+                                    SCOPUS
+                                </strong> pada hari ini</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile3" role="tabpanel" aria-labelledby="v-pills-profile3-tab">
+                        <div class="col-sm-12 col-lg-12" style="margin-bottom: 20px;">
+                            <div class="single_blog_item">
+                                <div class="single_blog_text " style="border-radius: 0px 0px 10px 10px !important; padding:20px 20px !important; ">
+                                    <div class="date ">
+                                        <a href="# " class="date_item ">Apr 06, 2019 </a>
+                                        <a href="# " class="date_item "> <span>#</span> Majalah </a>
+                                    </div>
+                                    <h3 style="font-size: 16px; "><a href="baca.html ">Building a Transparent Supply
+                                            Chain, Building a Transparent Supply Chain</a>
+                                    </h3>
+                                    <div class="mt-4 mb-4 ">
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">finance</a>
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">pemasaran</a>
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">teknologi</a>
+                                    </div>
+
+                                    <ul class="blog-info-link mt-4">
+                                        <li><i class="fa fa-eye "></i> 21x dilihat</li>
+                                        <li><i class="fa fa-download "></i> 12x diunduh</li>
+                                        <li><i class="fa fa-comments "></i> 5 Komentar</li>
+                                        <li><a href="baca.html " class="btn_3 ">Selengkapnya <img
+                                                    src="img/icon/left_1.svg " alt=" "></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-12" style="margin-bottom: 20px;">
+                            <div class="single_blog_item">
+                                <div class="single_blog_text " style="border-radius: 0px 0px 10px 10px !important; padding:20px 20px !important; ">
+                                    <div class="date ">
+                                        <a href="# " class="date_item ">Apr 06, 2019 </a>
+                                        <a href="# " class="date_item "> <span>#</span> Majalah </a>
+                                    </div>
+                                    <h3 style="font-size: 16px; "><a href="baca.html ">Building a Transparent Supply
+                                            Chain, Building a Transparent Supply Chain</a>
+                                    </h3>
+                                    <div class="mt-4 mb-4 ">
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">finance</a>
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">pemasaran</a>
+                                        <a href="# " style="color: black; " class="boxed-btn5 ">teknologi</a>
+                                    </div>
+
+                                    <ul class="blog-info-link mt-4">
+                                        <li><i class="fa fa-eye "></i> 21x dilihat</li>
+                                        <li><i class="fa fa-download "></i> 12x diunduh</li>
+                                        <li><i class="fa fa-comments "></i> 5 Komentar</li>
+                                        <li><a href="baca.html " class="btn_3 ">Selengkapnya <img
+                                                    src="img/icon/left_1.svg " alt=" "></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!-- footer_start -->
     <footer class="footer mt-30 ">
         <div class="bordered_1px "></div>
         <br><br><br>
@@ -611,7 +670,7 @@
         });
         $('#datepicker2').datepicker({
             iconsLibrary: 'fontawesome',
-            
+
 
         });
         var timepicker = $('#timepicker').timepicker({

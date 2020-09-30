@@ -2395,7 +2395,7 @@ h3 {
 @media (max-width: 767px) {
     /* line 1, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_team.scss */
     .team_area {
-        padding-bottom: 60px;
+        padding-bottom: 50px;
         padding-top: 50px;
     }
 }
@@ -2420,8 +2420,21 @@ h3 {
 /* line 15, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_team.scss */
 
 .team_area .single_team .thumb img {
-    width: 100%;
-    border-radius: 5%;
+    width: 185px;
+    height: 185px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+    /* line 1, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_team.scss */
+    .team_area .single_team .thumb img {
+        width: 185px;
+        height: 185px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: 90px;
+    }
 }
 
 
@@ -2443,9 +2456,9 @@ h3 {
 /* line 23, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_team.scss */
 
 .team_area .single_team .member_name .mamber_inner {
-    border-radius: 5px;
+    border-radius: 6px;
     display: inline-block;
-    padding: 16px 40px 11px 40px;
+    padding: 12px 16px 8px 16px;
     background: linear-gradient(0deg, rgba(244, 255, 238, 1) 0%, rgba(255, 254, 238, 1) 100%);
     box-shadow: 0px 16px 35px 0px rgba(0, 0, 2, 0.08);
 }
@@ -2458,13 +2471,24 @@ h3 {
     font-weight: 700;
     color: #222222;
     margin-bottom: 0;
+    font-size: 14px;
+}
+
+.team_area .single_team .member_name .mamber_inner h1 {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    color: #e4e4e4;
+    margin-bottom: 0;
+    font-size: 48px;
+    z-index: -99;
+    position: fixed;
 }
 
 
 /* line 35, ../../Arafath/CL/january 2020/240. Animal/HTML/scss/_team.scss */
 
 .team_area .single_team .member_name .mamber_inner p {
-    font-size: 14px;
+    font-size: 10px;
     color: #7a7b7c;
     font-weight: 400;
     margin-bottom: 0;
@@ -8261,7 +8285,9 @@ h6 {
 /* line 36, E:/169 Dingo Restaurant/169 Dingo Restaurant/169_Dingo_Restautent_html/sass/_blog_part.scss */
 
 .blog_item_section .single_blog_img img {
-    width: 100%;
+    width: 125px;
+    height: 150px;
+    object-fit: cover;
     border: 1px solid rgb(232, 232, 232);
 }
 
