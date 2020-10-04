@@ -2,8 +2,8 @@
 
 # Sedikit Tambahan dari Pak Fajar
 
--Logo2 ditampilkan di tampilan responsive/HP/Tab
--perubahan asset background
+- Logo2 ditampilkan di tampilan responsive/HP/Tab
+- perubahan asset background
 
 # Perubahan di repository
 
