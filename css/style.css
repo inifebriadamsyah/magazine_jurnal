@@ -1653,7 +1653,7 @@ h3 {
     color: #353535;
     font-family: "Exo 2", sans-serif;
     font-weight: 400;
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 @media (max-width: 767px) {
@@ -1661,7 +1661,7 @@ h3 {
     .header-area .header-top_area .short_contact_list ul li a {
         margin-left: 0;
         margin-right: 5px;
-        font-size: 14px;
+        font-size: 7px;
         margin-bottom: 10px;
         display: inline-block;
     }
